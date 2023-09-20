@@ -1,5 +1,3 @@
-package test;
-
 import org.jfree.chart.*;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
@@ -53,8 +51,8 @@ public class MultiFileHexDataGraph extends ApplicationFrame {
 
     private void createChartsFromFile(JTabbedPane tabbedPane, File file) {
         try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z", Locale.ENGLISH);
-            dateFormat.setTimeZone(TimeZone.getTimeZone("AEST"));
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss 'MESZ'", Locale.ENGLISH);
+            dateFormat.setTimeZone(TimeZone.getTimeZone("MESZ"));
 
             if (file.getName().endsWith(".log")) {
                 // Read data from a .log file
@@ -208,7 +206,8 @@ public class MultiFileHexDataGraph extends ApplicationFrame {
         }
     }
     public static void main(String[] args) {
-        MultiFileHexDataGraph chart = new MultiFileHexDataGraph("Performance Metrics", "H:\\stats\\"); // Update the directory path
+		// Locale.setDefault(Locale.GERMANY); // Set the default locale to German
+        MultiFileHexDataGraph chart = new MultiFileHexDataGraph("Performance Metrics", ".\\files"); // Update the directory path
         chart.pack();
         UIUtils.centerFrameOnScreen(chart);
         chart.setVisible(true);
