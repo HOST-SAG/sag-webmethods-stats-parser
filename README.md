@@ -5,36 +5,29 @@ To use the provided Java code for processing and plotting data from log and zip 
 
 1. **Download and Install Required Libraries:**
 
-   Ensure that you have the JFreeChart library installed or added to your project's dependencies. You can download it from the [official JFreeChart website](http://www.jfree.org/jfreechart/).
-   
-   Make sure to have also the localization property files in the right place. If not some error will tell you.
+   Ensure that you have the JFreeChart library installed or added to your project's dependencies. You can download it from the [official JFreeChart website](http://www.jfree.org/jfreechart/). Make sure to have also the localization property files in the right place. If not some error will tell you. (e.g. **"Can't find bundle for base name org.jfree.chart.plot.LocalizationBundle, locale en_US"**
 
-   (e.g. **"Can't find bundle for base name org.jfree.chart.plot.LocalizationBundle, locale en_US"**
+2. **Compile the code**
 
-3. **Compile the code**
+   e.g. run **"javac MultiFileHexDataGraph.java"** if needed add the class path to your libraries e.g.  **"javac -cp C:\jfreechart-1.5.3\src\main\java MultiFileHexDataGraph.java"** 
 
-   e.g. run **"javac MultiFileHexDataGraph.java"**
-   
-   if needed add the class path to your libraries e.g.  **"javac -cp C:\jfreechart-1.5.3\src\main\java MultiFileHexDataGraph.java"**
-   
-   The executable expects the files to parse in a subfolder of the execution place ".\\files\" 
-
-5. **Run the Application:**
+3. **Run the Application:**
 
    Run the Java application. e.g. **"java MultiFileHexDataGraph"**
    This will launch a graphical user interface (GUI) with tabs for each metric. The application will automatically process and plot data from log and zip files in the specified directory.
+   The executable expects the files to parse in a subfolder of the execution place ".\\files\" 
 
-7. **View the Charts:**
+4. **View the Charts:**
 
    The charts will be displayed in separate tabs based on the metric names. You can switch between tabs to view the charts for different metrics.
 
    ![Charts](chart.jpg)
 
-8. **Interact with the Charts:**
+5. **Interact with the Charts:**
 
    You can interact with the charts as you would with any standard charting application. You can zoom in, zoom out, pan, and save charts as images.
 
-9. **Close the Application:**
+6. **Close the Application:**
 
    Close the application when you are done viewing the charts.
 
@@ -42,7 +35,7 @@ The provided code handles both log and zip files, reads data from them, and dyna
 
 Make sure to adjust the `directoryPath` variable in the `main` method to point to your specific directory containing the log and zip files.
 
-**Field description in stats file**
+7. **Field description in stats file**
 
 TotalMem - The total amount of memory available to the Java virtual 
 
