@@ -6,28 +6,23 @@ To use the provided Java code for processing and plotting data from log and zip 
 1. **Download and Install Required Libraries:**
 
    Ensure that you have the JFreeChart library installed or added to your project's dependencies. You can download it from the [official JFreeChart website](http://www.jfree.org/jfreechart/).
+   Make sure to have also the localization property files in the right place. If not some error will tell you. (e.g. **"Can't find bundle for base name org.jfree.chart.plot.LocalizationBundle, locale en_US"**
 
-2. **Create a Java Project:**
+2. **Compile the code**
 
-   Create a Java project using your preferred integrated development environment (IDE) or a text editor.
-
-3. **Add the Provided Java Code:**
-
-   Copy and paste the provided Java code into a new Java class file within your project. Make sure the package structure matches the package name in the code (`package test;`).
-
+   e.g. run **"javac MultiFileHexDataGraph.java"**
+   if needed add the class path to your libraries e.g.  **"javac -cp C:\jfreechart-1.5.3\src\main\java MultiFileHexDataGraph.java"**
+ 
 4. **Update the Directory Path:**
 
-   In the `main` method, update the `directoryPath` variable with the path to the directory where your log and zip files are located. For example:
-
-   ```java
-   MultiFileHexDataGraph chart = new MultiFileHexDataGraph("Performance Metrics", "C:\\path\\to\\your\\files\\");
-   ```
+   The executable expects the files to parse in a subfolder of the execution place ".\\files\" 
 
 5. **Run the Application:**
 
-   Run the Java application. This will launch a graphical user interface (GUI) with tabs for each metric. The application will automatically process and plot data from log and zip files in the specified directory.
+   Run the Java application. e.g. **"java MultiFileHexDataGraph"**
+   This will launch a graphical user interface (GUI) with tabs for each metric. The application will automatically process and plot data from log and zip files in the specified directory.
 
-6. **View the Charts:**
+7. **View the Charts:**
 
    The charts will be displayed in separate tabs based on the metric names. You can switch between tabs to view the charts for different metrics.
 
