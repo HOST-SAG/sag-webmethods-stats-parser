@@ -6,15 +6,17 @@ To use the provided Java code for processing and plotting data from log and zip 
 1. **Download and Install Required Libraries:**
 
    Ensure that you have the JFreeChart library installed or added to your project's dependencies. You can download it from the [official JFreeChart website](http://www.jfree.org/jfreechart/).
-   Make sure to have also the localization property files in the right place. If not some error will tell you. (e.g. **"Can't find bundle for base name org.jfree.chart.plot.LocalizationBundle, locale en_US"**
+   
+   Make sure to have also the localization property files in the right place. If not some error will tell you.
 
-2. **Compile the code**
+   (e.g. **"Can't find bundle for base name org.jfree.chart.plot.LocalizationBundle, locale en_US"**
+
+3. **Compile the code**
 
    e.g. run **"javac MultiFileHexDataGraph.java"**
+   
    if needed add the class path to your libraries e.g.  **"javac -cp C:\jfreechart-1.5.3\src\main\java MultiFileHexDataGraph.java"**
- 
-4. **Update the Directory Path:**
-
+   
    The executable expects the files to parse in a subfolder of the execution place ".\\files\" 
 
 5. **Run the Application:**
