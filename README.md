@@ -1,4 +1,4 @@
-# SoftwareAG webMethods Stats log parser and plot graph for multiple stats*.log and zip files in the folder 
+# SoftwareAG webMethods Stats log parser and plot graph for multiple stats*.log or stats*.csv and zip files in the given folder
 
 Note: (old format with hexadecimal data use **MultiFileHexDataGraph**) or (new format with decimal data use **MultiFileHexDataGraphCSV**)
 
